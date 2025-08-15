@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Assignment Tracker</h1>
+        <p>Manage and track assignments for students and teachers</p>
+    </header>
+
+    <main>
+        <!-- Form Section -->
+        <section id="form-section">
+            <h2>Add New Assignment</h2>
+            <form id="assignmentForm">
+                <input type="text" id="title" placeholder="Assignment Title" required>
+                <input type="date" id="dueDate" required>
+                <select id="assignedTo" required>
+                    <option value="">Select Person</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Student">Student</option>
+                </select>
+                <button type="submit">Add Assignment</button>
+            </form>
+        </section>
+
+        <!-- Assignment List -->
+        <section id="assignment-list-section">
+            <h2>Assignment List</h2>
+            <ul id="assignmentList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Assignment Tracker | Designed for Students & Teachers</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
